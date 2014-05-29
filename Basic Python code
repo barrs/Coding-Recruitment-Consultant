@@ -1,0 +1,88 @@
+# Multiply number of years old I am, by how many days in a year, by how many hours in a day, times by minutes in an hour and seconds in a minute.
+
+age_in_years = 26
+
+days = 365.25
+
+hours = 24
+
+minutes = 60
+
+seconds = 60
+
+seconds_26_years = age_in_years * days * minutes * hours * seconds
+
+ 
+
+# Must take into consideration days since my birthday aswell. Apply same process.
+
+days_since_birthday = 39
+
+seconds_since_birthday = days_since_birthday * hours * minutes * seconds
+
+ 
+
+# Add both together
+
+seconds_alive = seconds_since_birthday + seconds_26_years
+
+ 
+
+history = "I am an ambitious, articulate & passionate former recruitment consultant. "
+
+vertical = "My vertical covered C#, Java, JS, PHP, Ruby, Python, Perl, C and C++."
+
+old = "second old,"
+
+fav = "My favorite development language is "
+
+but = "but I also quite like "
+
+ 
+
+# Find out which position within string "an" is located
+
+history.find("an")
+
+# "an" is position 5
+
+print history[:6]
+
+print seconds_alive
+
+print old
+
+ 
+
+history.find("ambitious")
+
+# Find out which position within string "ambitious" is located
+
+history.find("ambitious")
+
+# "ambitious" is position 8
+
+print history[8:] + vertical
+
+ 
+
+# Find out which position within string "Python," is located
+
+# "Python," is position 44
+
+vertical.find("Python,")
+
+print fav + vertical[44:51] + (",")
+
+ 
+
+# Find out which position within string "C#," is located
+
+# "C#," is position 19
+
+# Find which position within string "Perl," is located
+
+# "Perl," is position 52
+
+print but + vertical[19:44] + vertical[52:]
+
