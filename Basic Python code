@@ -1,6 +1,6 @@
 # Multiply number of years old I am, by how many days in a year, by how many hours in a day, times by minutes in an hour and seconds in a minute.
 
-age_in_years = 26
+age_in_years = 28
 
 days = 365.25
 
@@ -10,13 +10,13 @@ minutes = 60
 
 seconds = 60
 
-seconds_26_years = age_in_years * days * minutes * hours * seconds
+seconds_28_years = age_in_years * days * minutes * hours * seconds
 
  
 
 # Must take into consideration days since my birthday aswell. Apply same process.
 
-days_since_birthday = 39
+days_since_birthday = 101
 
 seconds_since_birthday = days_since_birthday * hours * minutes * seconds
 
@@ -24,27 +24,27 @@ seconds_since_birthday = days_since_birthday * hours * minutes * seconds
 
 # Add both together
 
-seconds_alive = seconds_since_birthday + seconds_26_years
+seconds_alive = seconds_since_birthday + seconds_28_years
 
  
 
-history = "I am an ambitious, articulate & passionate recruitment consultant turned sourcer. "
+history = "I am a work as a technical sourcer. "
 
-vertical = "My vertical covered C#, Java, JS, PHP, Ruby, Python, Perl, C and C++."
+vertical = "My verticals covered C#, Java, JS, PHP, Ruby, Python, Perl, C and C++."
 
 old = "second old,"
 
-fav = "My favorite development language is "
+fav = "My favourite development language to source was"
 
-but = "but I also quite like "
+but = "but my focus is now "
 
  
 
-# Find out which position within string "an" is located
+# Find out which position within string "I" is located
 
-history.find("an")
+history.find("I")
 
-# "an" is position 5
+# "I" is position 1
 
 print history[:6]
 
@@ -54,15 +54,15 @@ print old
 
  
 
-history.find("ambitious")
+history.find("technical")
 
-# Find out which position within string "ambitious" is located
+# Find out which position within string "technical" is located
 
-history.find("ambitious")
+history.find("technical")
 
-# "ambitious" is position 8
+# "technical" is position 17
 
-print history[8:] + vertical
+print history[17:] + vertical
 
  
 
@@ -72,17 +72,17 @@ print history[8:] + vertical
 
 vertical.find("Python,")
 
-print fav + vertical[44:51] + (",")
+print fav + vertical[45:52] + (",")
 
  
 
-# Find out which position within string "C#," is located
+# Find out which position within string "C++," is located
 
-# "C#," is position 19
+# "c++" is position 56
 
-# Find which position within string "Perl," is located
+# Find which position within string "Java," is located
 
-# "Perl," is position 52
+# "Java," is position 28
 
-print but + vertical[19:44] + vertical[52:]
+print but + vertical[25:29] + vertical[61:]
 
